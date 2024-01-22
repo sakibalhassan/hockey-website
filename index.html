@@ -12,6 +12,10 @@
         rel="stylesheet">
     <!-- google font -->
 
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/20cb76860e.js" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+
     <!-- tailwind and daisy ui link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -42,18 +46,30 @@
     <header class="container mx-auto">
         <!-- ===========navbar start============= -->
 
-        <div class="navbar lg:py-10 bg-base-100">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+        <nav>
+            <div class="navbar lg:py-10 bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="text-bg-hockey-primary">Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <a class="btn btn-ghost text-4xl font-extrabold">Hockey’s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
                         <li><a class="text-bg-hockey-primary">Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
@@ -61,21 +77,11 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-4xl font-extrabold">Hockey’s</a>
+                <div class="navbar-end">
+                    <a class="btn bg-bg-hockey-primary py-4 px-6">Get Ticket</a>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a class="text-bg-hockey-primary">Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Pages</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Contact</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <a class="btn bg-bg-hockey-primary py-4 px-6">Button</a>
-            </div>
-        </div>
+        </nav>
 
         <!-- ===========navbar end============= -->
 
@@ -229,6 +235,399 @@
             </div>
         </section>
         <!--=============== program section ==============-->
+
+        <!--=========== products section================= -->
+
+        <section class="mt-24">
+            <hr class="border-b-1 border-gray-400 mb-10">
+            <h3 class="text-4xl text-center font-extrabold">Our New Products</h3>
+            <p class="lg:w-[600px] mx-auto text-lg mt-6 text-center">A product description is a form of marketing copy
+                used to describe and explain the benefits of your product</p>
+            <hr class="border-b-1 border-gray-400 mt-8 mb-14">
+
+            <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
+                <div class="border-2 border-gray-300 rounded-xl">
+                    <div class="flex gap-5 py-5 px-6 flex-col lg:flex-row">
+                        <img src="Images/5.png" class="" />
+                        <div>
+                            <div class="flex gap-2">
+                                <div>
+                                    <i class="fa-solid text-yellow-500 fa-star"></i>
+                                    <span>5.0</span>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <span>20</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <h1 class="text-2xl font-bold mt-2">World Cup Flags Football</h1>
+                            <p class="py-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex gap-3">
+                                <div>
+                                    <span class="text-bg-hockey-primary">Price - $22.00</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid mr-2 fa-truck"></i>
+                                    <span>Delivery Fee : Free</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-300 rounded-xl">
+                    <div class="flex gap-5 py-5 px-6 flex-col lg:flex-row">
+                        <img src="Images/6.png" class="" />
+                        <div>
+                            <div class="flex gap-2">
+                                <div>
+                                    <i class="fa-solid text-yellow-500 fa-star"></i>
+                                    <span>5.0</span>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <span>20</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <h1 class="text-2xl font-bold mt-2">World Cup Flags Football</h1>
+                            <p class="py-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex gap-3">
+                                <div>
+                                    <span class="text-bg-hockey-primary">Price - $22.00</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid mr-2 fa-truck"></i>
+                                    <span>Delivery Fee : Free</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-300 rounded-xl">
+                    <div class="flex gap-5 py-5 px-6 flex-col lg:flex-row">
+                        <img src="Images/7.png" class="" />
+                        <div>
+                            <div class="flex gap-2">
+                                <div>
+                                    <i class="fa-solid text-yellow-500 fa-star"></i>
+                                    <span>5.0</span>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <span>20</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <h1 class="text-2xl font-bold mt-2">Cap For Hockeys</h1>
+                            <p class="py-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex gap-3">
+                                <div>
+                                    <span class="text-bg-hockey-primary">Price - $22.00</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid mr-2 fa-truck"></i>
+                                    <span>Delivery Fee : Free</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-300 rounded-xl">
+                    <div class="flex gap-5 py-5 px-6 flex-col lg:flex-row">
+                        <img src="Images/8.png" class="" />
+                        <div>
+                            <div class="flex gap-2">
+                                <div>
+                                    <i class="fa-solid text-yellow-500 fa-star"></i>
+                                    <span>5.0</span>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <span>20</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <h1 class="text-2xl font-bold mt-2">World Cup Flags Football</h1>
+                            <p class="py-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex gap-3">
+                                <div>
+                                    <span class="text-bg-hockey-primary">Price - $22.00</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid mr-2 fa-truck"></i>
+                                    <span>Delivery Fee : Free</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-300 rounded-xl">
+                    <div class="flex gap-5 py-5 px-6 flex-col lg:flex-row">
+                        <img src="Images/9.png" class="" />
+                        <div>
+                            <div class="flex gap-2">
+                                <div>
+                                    <i class="fa-solid text-yellow-500 fa-star"></i>
+                                    <span>5.0</span>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <span>20</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <h1 class="text-2xl font-bold mt-2">World Cup Flags Football</h1>
+                            <p class="py-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex gap-3">
+                                <div>
+                                    <span class="text-bg-hockey-primary">Price - $22.00</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid mr-2 fa-truck"></i>
+                                    <span>Delivery Fee : Free</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-300 rounded-xl">
+                    <div class="flex gap-5 py-5 px-6 flex-col lg:flex-row">
+                        <img src="Images/10.png" class="" />
+                        <div>
+                            <div class="flex gap-2">
+                                <div>
+                                    <i class="fa-solid text-yellow-500 fa-star"></i>
+                                    <span>5.0</span>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <span>20</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <h1 class="text-2xl font-bold mt-2">World Cup Flags Football</h1>
+                            <p class="py-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex gap-3">
+                                <div>
+                                    <span class="text-bg-hockey-primary">Price - $22.00</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid mr-2 fa-truck"></i>
+                                    <span>Delivery Fee : Free</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=========== products section================= -->
+
+        <!-- ================clint section=================== -->
+
+
+        <section class="mt-24 p-2">
+            <hr class="border-b-1 border-gray-400 mb-10">
+            <h3 class="text-4xl text-center font-extrabold">Clients Question</h3>
+            <p class="lg:w-[600px] mx-auto text-lg mt-6 text-center">Dit amet consectetur. Condimentum dignissim
+                adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            <hr class="border-b-1 border-gray-400 mt-8 mb-14">
+
+            <div class="flex flex-col lg:flex-row gap-6">
+                <div>
+                    <img class="w-full" src="Images/11.png" alt="">
+                </div>
+                <div>
+                    <div class="collapse collapse-plus border-b-2 border-gray-300">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content">
+                            <p>There are many different types of office equipment in our work. The main one found in the
+                                offices are</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-b-2 border-gray-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content">
+                            <p>Hockey is the national game of India. Also, it is a popular game and an interesting game
+                                that many countries play. The game has many rules that need to be followed</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-b-2 border-gray-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content">
+                            <p>There are many different types of office equipment in our work. The main one found in the
+                                offices are</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-b-2 border-gray-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content">
+                            <p>Among the pioneers of ski touring is John "Snowshoe" Thompson, perhaps the earliest
+                                modern ski mountaineer and a prolific traveler who used skis to deliver the mail at
+                                least</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-b-2 border-gray-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Booking
+                        </div>
+                        <div class="collapse-content">
+                            <p>Booking.com is one of the largest online travel agencies. It is headquartered in
+                                Amsterdam, and is a subsidiary of Booking Holdings</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-b-2 border-gray-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Pricings
+                        </div>
+                        <div class="collapse-content">
+                            <p>Pricing is the process whereby a business sets the price at which it will sell its
+                                products and services, and may be part of the business's marketing plan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================clint section=================== -->
+
+        <!-- =========Get In Touch================= -->
+        <section class="mt-24">
+            <hr class="border-b-1 border-gray-400 mb-10">
+            <h3 class="text-4xl text-center font-extrabold">Get In Touch</h3>
+            <p class="lg:w-[600px] mx-auto text-lg mt-6 text-center">Dit amet consectetur. Condimentum dignissim
+                adipiscing
+                aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            <hr class="border-b-1 border-gray-400 mt-8 mb-14">
+
+            <div class="flex gap-6 flex-col lg:flex-row">
+                <div class="border-2 border-gray-300 p-11">
+                    <div>
+                        <div class="bg-orange-300 rounded-lg  p-8 lg:w-[374px]">
+                            <div class="">
+                                <div class="">
+                                    <img src="Images/Group 1171275317.png" alt="">
+                                    <p class="py-2">Phone Number : </p>
+                                    <h4 class="text-2xl font-bold">(+62) 123-321-543</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-6">
+                        <div class="bg-cyan-300 rounded-lg  p-8 lg:w-[374px]">
+                            <div class="">
+                                <div class="">
+                                    <img src="Images/Group 1171275318.png" alt="">
+                                    <p class="py-2">Email : </p>
+                                    <h4 class="text-2xl font-bold">hockeys@support.com</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-stone-300 rounded-lg p-8 lg:w-[374px]">
+                            <div class="">
+                                <div class="">
+                                    <img src="Images/Group 1171275321.png" alt="">
+                                    <p class="py-2">Location : </p>
+                                    <h4 class="text-2xl font-bold">152/1 Mohakhali Wireless Gate</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-2">
+                    <div class="flex flex-col lg:flex-row gap-6">
+                        <label for="name">Your Name <br>
+                            <input type="text" placeholder="Enter your full name"
+                                class="input input-bordered w-full lg:w-[500px]" />
+                        </label>
+                        <label for="email">Your Email <br>
+                            <input type="text" placeholder="Enter your email"
+                                class="input input-bordered w-full lg:w-[500px]" />
+                        </label>
+                    </div>
+                    <div class="flex flex-col lg:flex-row  gap-6 mt-3 mb-10">
+                        <label for="subject">subjects <br>
+                            <input type="text" placeholder="Enter your subjects"
+                                class="input input-bordered w-full lg:w-[500px]" />
+                        </label>
+                        <label for="email">Your Number <br>
+                            <input type="text" placeholder="Enter your Number"
+                                class="input input-bordered w-full lg:w-[500px]" />
+                        </label>
+
+                    </div>
+                    <label for="Message">Message <br>
+                        <textarea class="textarea w-full h-[150px] lg:w-[1024px] lg:h-[370px] textarea-bordered"
+                            placeholder="Write your message"></textarea>
+                    </label>
+                    <button class="btn btn-primary mt-10 bg-bg-hockey-primary border-none w-full lg:w-[1024px]">Send
+                        Message</button>
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+        <!-- =========Get In Touch================= -->
+
+        <!--============ social icon section=========== -->
+
+        <section class="mt-11">
+            <div class="hero bg-base-200">
+                <div class="hero-content text-center">
+                    <div class="max-w-md py-9">
+                        <h1 class="text-2xl mb-6 font-bold">Social Media</h1>
+                        <div class="flex gap-6">
+                            <i class="fa-brands text-2xl fa-twitter"></i>
+                            <i class="fa-brands text-2xl fa-facebook"></i>
+                            <i class="fa-brands text-2xl fa-instagram"></i>
+                            <i class="fa-brands text-2xl fa-github"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--============ social icon section=========== -->
     </main>
     <footer>
 
